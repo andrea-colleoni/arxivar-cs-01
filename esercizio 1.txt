@@ -1,0 +1,14 @@
+- Nella soluzione corrente, creare un nuovo progetto di tipo Console Application (.NET Framework) denominato "Esercizi"
+
+- Creare una classe Esercizio1
+- Crare un metodo con la seguente definizione 
+	static void Main(string[] args)
+NB: questa definizione consente al metodo di essere eseguito direttamente da un programma a console
+
+- Dalle proprietà del progetto impostare Esercizio1 come classe di avvio (Startup object)
+- Nell'esercizio definire un metodo che funzioni in questo modo:
+	- accetta due argomenti di tipo float a e b
+	- se a è maggiore di b restituisce a - b
+	- se a è minore di b restituisce b - a
+	
+- Richiamare il nuovo metodo dal proramma principale
