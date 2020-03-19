@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8ADFC95E-5233-4C90-9316-8DA703372185}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>_06_Eccezioni</RootNamespace>
-    <AssemblyName>06-Eccezioni</AssemblyName>
+    <ProjectGuid>{FD9E80B9-75A2-4EBD-ADAC-E4D879A4BB57}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Esercizio4</RootNamespace>
+    <AssemblyName>Esercizio4</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,8 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Automobile.cs" />
-    <Compile Include="CarburanteFinitoException.cs" />
     <Compile Include="FmMain.cs">
       <SubType>Form</SubType>
     </Compile>
