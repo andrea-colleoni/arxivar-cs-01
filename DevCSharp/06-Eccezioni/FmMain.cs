@@ -18,7 +18,7 @@ namespace _06_Eccezioni
         public FmMain()
         {
             InitializeComponent();
-
+            automobileBindingSource.DataSource = automobili;
             /*
             automobili.Add(new Automobile()
             {
@@ -92,7 +92,15 @@ namespace _06_Eccezioni
                     Marca = txtMarca.Text,
                     Modello = txtModello.Text
                 });
-                automobileBindingSource.DataSource = automobili;
+                automobileBindingSource.ResetBindings(false);
+
+                txtCapacita.Text = "";
+                txtCilindrata.Text = "";
+                txtConsumo.Text = "";
+                txtMarca.Text = "";
+                txtModello.Text = "";
+                txtOutput.Text = "";
+                txtMarca.Focus();
                 /*
                 int a = 0;
                 int b = 10;
@@ -110,11 +118,6 @@ namespace _06_Eccezioni
                     ex.Message);
             }
             // dopo il try catch
-        }
-
-        private void AutomobileBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

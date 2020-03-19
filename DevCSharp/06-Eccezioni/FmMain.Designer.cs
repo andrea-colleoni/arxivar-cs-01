@@ -337,7 +337,7 @@
             // 
             // automobileBindingSource
             // 
-            this.automobileBindingSource.DataSource = typeof(Automobile);
+            this.automobileBindingSource.DataSource = typeof(_06_Eccezioni.Automobile);
             // 
             // FmMain
             // 
