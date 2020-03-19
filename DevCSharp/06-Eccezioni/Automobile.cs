@@ -4,22 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Esercizio2
+namespace _06_Eccezioni
 {
-    class Automobile
+    public class Automobile
     {
-        // campi => non sono la scelta ideale per la gestione dello stato di un oggetto
-        // li trasformo in proprietà
         public string Marca { get; set; }
         public string Modello { get; set; }
         public int Cilindrata { get; set; }
         public float CapacitaSerbatoio { get; set; }
         public float LivelloCarburante { get; set; }
         public float ConsumoKmLitro { get; set; }
-
-        // un proprietà è una coppia (pubblica) di metodi (get e set) che servono per acceder
-        // rispettivamente in lettura e in scrittura a dei campi che implicitamente 
-        // rimarranno privati
 
         public Automobile()
         {
@@ -49,7 +43,7 @@ namespace Esercizio2
             var consumo = kilometri / ConsumoKmLitro;
             if (consumo > LivelloCarburante)
             {
-                return $"{Marca} {Modello} è ferma perché ha finito il carburante";
+                throw new CarburanteFinitoException($"{Marca} {Modello} è ferma perché ha finito il carburante");
             }
             else
             {

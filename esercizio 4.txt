@@ -1,0 +1,17 @@
+Costruire un app winform "calcolatrice"
+
+- Due textBox con gli operandi (txtOp1 e txtOp2)
+- quattro pulsanti per le quattro operazioni
+- una label per il risultato
+- una textbox multiriga con le ultime operazioni eseguite
+
+Il programma deve prevedere:
+- le gestione degli errori di conversione di tipo sugli operandi (FormatException)
+- la gestione degli errori di calcolo (DivisionByZeroException)
+
+- Mostrare nella label il risultato dell'operazione oppure un messaggio di errore
+
+- Ad ogni operazione l'operazione va aggiunta all'elenco delle ultime opeerazioni eseguite
+- le textbox degli operandi vanno "ripulite" per consentire l'esecuzione di una nuova operazione
+
+Nota (opzionale): gestire un layout adattativo per la calcolatrice (usando pe esempio un tableLayout)

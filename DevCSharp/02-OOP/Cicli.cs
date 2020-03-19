@@ -46,7 +46,7 @@ namespace OOP
             int j = 0; // inizializzazione della variabile che governa il ciclo
             while(j < capoluoghiDiRegione.Length)
             {
-                Console.WriteLine(capoluoghiDiRegione[i]);
+                Console.WriteLine(capoluoghiDiRegione[j]);
                 j++; // mi devo ricordare di modificare la variabile che governa il ciclo
             }
         }

@@ -1,0 +1,9 @@
+Costruire una console application WinForms con le seguenti specifiche:
+
+- Una label con il titolo
+- Una textBox multinea per visualizzare dei rusltati in forma di testo (come abbiamo sempre fatto con la Console.WriteLine())
+- un bottone di comando per avviare il nostro programma
+
+Il programma deve replicare quanto fatto nell'esercizio 2 con il viaggio delle automobili,
+quindi una volta cliccato il bottone si avvia il ciclo del viaggio e le automobili viagiano consumando carburante.
+Gli output che nell'esecizio 2 andavano in console, ora devono essere riportati nella textbox multilinea.
