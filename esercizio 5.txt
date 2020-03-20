@@ -1,0 +1,9 @@
+Sviluppare un progetto Console application:
+
+
+- Riutilizzare con un riferimento la classe Automobile utilizzata nell'esercizio 3
+- Dato un elenco di numeri (memorizzati un una List<int>) creare una collezione di automobile tutte della stessa marca, modello e capacità del serbatoio, ma con il numero della lista utilizzato come dato di consumo del carburante
+
+- con la lista di automobili effettuare una gara (10 km alla volta) e ricavare la quantità di carburante avanzato dopo che tutte le automobili si sono fermate
+
+- ogni informazione relativa al viaggio e alle condizioni di funzionamento delle automobili deve essere loggata (usando log4net) su un file e sulla console
