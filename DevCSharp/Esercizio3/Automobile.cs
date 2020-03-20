@@ -37,6 +37,7 @@ namespace Esercizio3
         public string Rifornimento(float litri)
         {
             this.LivelloCarburante += litri; // LivelloCarburante = LivelloCarburante + litri;
+            // aggiungo log....
             return $"nuovo livello carburante => {this.LivelloCarburante}";
         }
 
