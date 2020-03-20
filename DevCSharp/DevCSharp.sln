@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-Linq", "09-Linq\09-Linq.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esercizio5", "Esercizio5\Esercizio5.csproj", "{DD8E3AB2-D643-4C44-85CA-AB66ABD5EA90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-DelegatesEvents", "10-DelegatesEvents\10-DelegatesEvents.csproj", "{8FEABB2A-A394-48B9-A5E5-47D918BA5443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-ConnessioneDb", "11-ConnessioneDb\11-ConnessioneDb.csproj", "{DC7E90D7-E0D8-412D-8A47-202DDD0855FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{DD8E3AB2-D643-4C44-85CA-AB66ABD5EA90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD8E3AB2-D643-4C44-85CA-AB66ABD5EA90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD8E3AB2-D643-4C44-85CA-AB66ABD5EA90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FEABB2A-A394-48B9-A5E5-47D918BA5443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FEABB2A-A394-48B9-A5E5-47D918BA5443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FEABB2A-A394-48B9-A5E5-47D918BA5443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FEABB2A-A394-48B9-A5E5-47D918BA5443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC7E90D7-E0D8-412D-8A47-202DDD0855FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7E90D7-E0D8-412D-8A47-202DDD0855FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7E90D7-E0D8-412D-8A47-202DDD0855FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7E90D7-E0D8-412D-8A47-202DDD0855FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

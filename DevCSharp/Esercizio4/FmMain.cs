@@ -12,6 +12,8 @@ namespace Esercizio4
 {
     public partial class FmMain : Form
     {
+        delegate string Operazione(string op1, string op2);
+
         public FmMain()
         {
             InitializeComponent();
@@ -42,26 +44,43 @@ namespace Esercizio4
             // lblRisultato.Text = "";
         }
 
+        private string Somma(string op1, string op2)
+        {
+            return ((Convalida(op1) ?? 0) + (Convalida(op2) ?? 0)).ToString();
+        }
+
+        private string Prodotto(string op1, string op2)
+        {
+            return ((Convalida(op1) ?? 0) * (Convalida(op2) ?? 0)).ToString();
+        }
+
+        private void EseguiOperazione(Operazione operazione, string op1, string op2, string testo)
+        {
+            lblRisultato.Text = operazione(op1, op2);
+            AggiungiOperazione(testo);
+            Pulisci();
+        }
+
         private void BtnTutti_Click(object sender, EventArgs e)
         {
+            
+
             // cast del sender a Button
             var operazione = ((Button)sender).Text;
+            var op1 = txtOp1.Text;
+            var op2 = txtOp2.Text;
             switch (operazione)
             {
                 case "+":
-                    lblRisultato.Text = (
-                        (Convalida(txtOp1.Text) ?? 0) + (Convalida(txtOp2.Text) ?? 0)
-                        ).ToString();
-                    break;
-                case "-":
-                    lblRisultato.Text = (
-                        (Convalida(txtOp1.Text) ?? 0) - (Convalida(txtOp2.Text) ?? 0)
-                        ).ToString();
+                    EseguiOperazione(Somma, op1, op2, operazione);
                     break;
                 case "*":
-                    lblRisultato.Text = (
-                        (Convalida(txtOp1.Text) ?? 0) * (Convalida(txtOp2.Text) ?? 0)
-                        ).ToString();
+                    EseguiOperazione(Prodotto, op1, op2, operazione);
+                    break;
+                case "-":
+                    EseguiOperazione((o1, o2) => {
+                        return ((Convalida(op1) ?? 0) * (Convalida(op2) ?? 0)).ToString();
+                    }, txtOp1.Text, txtOp2.Text, operazione);
                     break;
                 case "/":
                     lblRisultato.Text = (
