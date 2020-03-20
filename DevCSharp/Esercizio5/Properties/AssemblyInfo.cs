@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("09-Linq")]
+[assembly: AssemblyTitle("Esercizio5")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("09-Linq")]
+[assembly: AssemblyProduct("Esercizio5")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e4998ada-c278-4c9d-8ea5-9d40527fe8c3")]
+[assembly: Guid("dd8e3ab2-d643-4c44-85ca-ab66abd5ea90")]
 
 // Version information for an assembly consists of the following four values:
 //

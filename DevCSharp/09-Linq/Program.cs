@@ -37,9 +37,9 @@ namespace _09_Linq
             // la funzione viene utilizzata dall'extension method di linq per eseguire la funzione richiesta
             // in questo caso Where() => filtro
             var altraLista = giorniDellaSettimana.Where(s => s.EndsWith("dì"));
-            Console.WriteLine($"elementi nella lista: {altraLista.Count()}");
+            log.Info($"elementi nella lista: {altraLista.Count()}");
             var esisteV = giorniDellaSettimana.Any(x => x.StartsWith("v"));
-            Console.WriteLine($"esiste V? {esisteV}");
+            log.Info($"esiste V? {esisteV}");
             // voglio alla fine una List<Appuntamento>
             var appuntamenti = giorniDellaSettimana
                 .Where(s => s.EndsWith("dì") && s.StartsWith("l"))
@@ -66,7 +66,6 @@ namespace _09_Linq
                 .FirstOrDefault(); // non va mai in eccezione; se la collezione è vuota restituisce null
 
             Console.ReadLine();
-
         }
     }
 }

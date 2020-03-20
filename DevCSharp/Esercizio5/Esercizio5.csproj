@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E4998ADA-C278-4C9D-8EA5-9D40527FE8C3}</ProjectGuid>
+    <ProjectGuid>{DD8E3AB2-D643-4C44-85CA-AB66ABD5EA90}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_09_Linq</RootNamespace>
-    <AssemblyName>09-Linq</AssemblyName>
+    <RootNamespace>Esercizio5</RootNamespace>
+    <AssemblyName>Esercizio5</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,18 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appuntamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-	<None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>	
     <None Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Esercizio3\Esercizio3.csproj">
+      <Project>{deabb4a4-9ee4-4b24-96ac-cc9dd764b601}</Project>
+      <Name>Esercizio3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

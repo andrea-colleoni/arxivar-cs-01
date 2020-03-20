@@ -9,12 +9,12 @@ namespace Esercizio3
 {
     public class Automobile
     {
-        public string Marca;
-        public string Modello;
-        public int Cilindrata;
-        public float CapacitaSerbatoio;
-        public float LivelloCarburante;
-        public float ConsumoKmLitro;
+        public string Marca { get; set; }
+        public string Modello { get; set; }
+        public int Cilindrata { get; set; }
+        public float CapacitaSerbatoio { get; set; }
+        public float LivelloCarburante { get; set; }
+        public float ConsumoKmLitro { get; set; }
 
         public Automobile()
         {
@@ -34,9 +34,10 @@ namespace Esercizio3
             ConsumoKmLitro = consumoKmLitro;
         }
 
-        public void Rifornimento(float litri)
+        public string Rifornimento(float litri)
         {
-            LivelloCarburante += litri; // LivelloCarburante = LivelloCarburante + litri;
+            this.LivelloCarburante += litri; // LivelloCarburante = LivelloCarburante + litri;
+            return $"nuovo livello carburante => {this.LivelloCarburante}";
         }
 
         public string Viaggia(int kilometri)
